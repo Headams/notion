@@ -12,7 +12,7 @@ async def main():
                     print(f"Received from server: {response2}")
                     print(f"Received from server: {response}")
         except (asyncio.TimeoutError, websockets.exceptions.ConnectionClosed):
-            print("Connection closed. Reconnecting...")
+            print("Connection closed. Reconnecting.c..")
             await asyncio.sleep(5)  # 5초 후 재연결 시도
             await main()
 
